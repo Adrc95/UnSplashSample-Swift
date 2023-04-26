@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell" customModule="UnSplashSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_unsplash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="CqF-vT-SWq">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+            <constraints>
+                <constraint firstItem="CqF-vT-SWq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bFb-N5-wMU"/>
+                <constraint firstItem="CqF-vT-SWq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gFc-XW-joy"/>
+                <constraint firstAttribute="trailing" secondItem="CqF-vT-SWq" secondAttribute="trailing" id="tod-ki-OXV"/>
+                <constraint firstAttribute="bottom" secondItem="CqF-vT-SWq" secondAttribute="bottom" id="x7T-EL-15i"/>
+            </constraints>
+            <edgeInsets key="layoutMargins" top="2" left="2" bottom="2" right="2"/>
+            <connections>
+                <outlet property="photoImageView" destination="CqF-vT-SWq" id="bCM-eX-C8r"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-11.267605633802818"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_unsplash_logo" width="100" height="71.333335876464844"/>
+    </resources>
+</document>

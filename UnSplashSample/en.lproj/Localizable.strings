@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  UnSplashSample
+
+  Created by Adrian on 23/4/23.
+  
+*/
+"app_name" = "UnSplashSample";
+"author" = "Creador por:";
+"date_publication" = "Publicada el %1$s";
+"camera" = "Cámara";
+"lens" = "Lente";
+"on" = "en";
+"unsplash" = "Unsplash";
+"camera_info_dialog" = "CAMERA_DIALOG";
+"no_description" = "El autor no ha proporcionado ninguna descripción para esta foto..";
+"error" = "Error";
+"error_message" = "Ha ocurrido un error";
+"retry" = "Reintentar";
