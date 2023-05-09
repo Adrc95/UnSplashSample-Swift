@@ -3,18 +3,18 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #1 in MainViewController.navigateToDetail(photoSelected:):MainViewController.swift">
+         contextName = "closure #1 in DetailViewController.updateAuthor(detail:):DetailViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "photo">
+               value = "photo.author.name">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "PhotosAlamoFireDataSource.getPhotos(page:perPage:):PhotosAlamoFireDataSource.swift">
+         contextName = "String.getString(args:):Extension.swift">
       </ContextState>
       <ContextState
-         contextName = "String.getString(args:):Extension.swift">
+         contextName = "ApiManager.getPhotos(page:perPage:):ApiManager.swift">
       </ContextState>
       <ContextState
          contextName = "closure #1 in closure #1 in ApiManager.request&lt;&#x3c4;_0_0&gt;(url:method:parameters:responseType:):ApiManager.swift">
@@ -25,10 +25,18 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in MainViewController.navigateToDetail(photoSelected:):MainViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "photo">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "MainViewController.viewDidLoad():MainViewController.swift">
       </ContextState>
       <ContextState
-         contextName = "ApiManager.getPhotos(page:perPage:):ApiManager.swift">
+         contextName = "PhotosAlamoFireDataSource.getPhotos(page:perPage:):PhotosAlamoFireDataSource.swift">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

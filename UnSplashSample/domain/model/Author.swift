@@ -12,6 +12,6 @@ struct Author {
     let name: String
     let firstName: String
     let lastName: String
-    let photo: String
+    let photo: URL?
     let location: String
 }
