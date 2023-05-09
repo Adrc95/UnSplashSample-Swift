@@ -11,6 +11,9 @@ import Combine
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var avatar: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var username: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var loading: UIActivityIndicatorView!
 
@@ -31,7 +34,7 @@ class DetailViewController: UIViewController {
 
     private func updateUI(state: DetailViewModel.UIState) {
         updateLoading(isRenderLoading: state.isLoading)
-        updatePhoto(photo: state.photo)
+        updateUI(detail: state.photo)
         showError(isError: state.error)
     }
 
@@ -58,9 +61,24 @@ class DetailViewController: UIViewController {
         }
     }
 
-    private func updatePhoto(photo: Photo?) {
+    private func updateUI(detail: Photo?) {
+        updatePhoto(photo: detail?.url)
+        updateAuthor(detail: detail)
+    }
+
+    private func updateAuthor(detail: Photo?) {
+        name.text = detail?.author.name
+        username.text = detail?.author.username
+        detail?.author.photo.let { photo in
+            avatar.sd_setImage(with: photo)
+            avatar.layer.cornerRadius = 20
+            avatar.clipsToBounds = true
+        }
+    }
+
+    private func updatePhoto(photo: URL?) {
         photo.let { photo in
-            photoImageView.sd_setImage(with: photo.url)
+            photoImageView.sd_setImage(with: photo)
         }
     }
 

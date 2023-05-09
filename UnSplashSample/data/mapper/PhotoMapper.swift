@@ -46,7 +46,9 @@ extension Author {
         name = dto.name.orEmpty()
         firstName = dto.firstName.orEmpty()
         lastName = dto.lastName.orEmpty()
-        photo = dto.profileImage.let { value in value.medium }.orEmpty()
+        photo = dto.profileImage.let { value in
+            URL(string: value.medium)!
+        }
         location = dto.location.orEmpty()
     }
 }
